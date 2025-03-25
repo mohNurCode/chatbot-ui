@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAME Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="chat_werper">
+<!-- Chat Container -->
+<div id="chat-container">
+  <!-- Chat Header -->
+  <div id="chat-header">
+    <img src="Asset/image/logo.jpg" alt="Chatbot Icon" class="chatbot-icon">
+    <h2>Interview mame Ai</h2>
+  </div>
+  
+  <!-- Cards Section -->
+  <div id="card-container" class="card_container">
+    <div class="ftext">
+        Hello! My name is <span class="highlight-name">Mehammednur Hashim</span>. <br> Are you interested in interviewing me?
+    </div>
+    <div class="sub">
+        <div class="card" id="help-card">
+            <i class="fas fa-user"></i>
+            <h3>About Me</h3>
+        </div>
+        <div class="card" id="portfolio-card">
+            <i class="fas fa-lightbulb"></i>
+            <h3>My Skills</h3>
+        </div>
+        <div class="card" id="progress-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>My Insights</h3>
+        </div>
+    </div>
+  </div>
+
+  <!-- Chat Window -->
+  <div id="chat-window">
+    <!-- Chat messages will appear here -->
+  </div>
+
+  <!-- Chat Input -->
+  <div id="chat-input-container">
+    <input type="text" id="chat-input" placeholder="Type a message..." />
+    <button id="send-button"><i class="fas fa-microphone-lines"></i></button>
+    <button id="feedback-button" onclick="provideFeedback()">
+      <i class="fas fa-comment-dots"></i> Feedback
+    </button>
+  </div>
+  
+</div>
+
+<!-- Feedback Popup -->
+<div id="feedback-popup" class="chatbot-popup">
+  <div class="chatbot-popup-content">
+    <span class="close-popup">&times;</span>
+    <h3>We Value Your Feedback!</h3>
+    <form id="feedback-form">
+      <label for="feedback-rating">Rate your experience:</label>
+      <div class="rating">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+      </div>
+      <label for="feedback-comment">Your comments:</label>
+      <textarea id="feedback-comment" placeholder="What did you like or dislike?"></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+</div>
+</div>
+  
+  <!-- Footer -->
+  <div class="footer">
+    <p>Version 1.0.0 | Powered by MAME | <span id="current-date">2025</span> | <a class="helpl" href="#">Help</a></p>
+    <p><strong>Note:</strong> This chatbot is in its early development stage. We are continuously working to improve it. Thank you for your understanding!</p>
+  </div>
+  
+    
+  
+
+ 
+  
+  <script src="script.js"></script>
+</body>
+</html>
